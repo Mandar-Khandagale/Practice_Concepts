@@ -62,11 +62,13 @@ class _HomeScreenState extends State<HomeScreen> {
             Padding(
               padding: EdgeInsets.all(2 * SizeConfig.heightMultiplier),
               child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                raisedButton("MVVM",EmployeeListView()),
-                raisedButton('RxDart',RxDartUserList()),
-                raisedButton('Scope Model',ScopeModelUserView()),
+                Expanded(flex:1,child:  raisedButton("MVVM",EmployeeListView()),),
+                SizedBox(width: 4 *SizeConfig.widthMultiplier,),
+                Expanded(flex: 1,child:raisedButton('RxDart',RxDartUserList()),),
+                SizedBox(width: 4 *SizeConfig.widthMultiplier,),
+                Expanded(flex: 1, child: raisedButton('Scope Model',ScopeModelUserView()),),
               ],
                 ),
             ),
@@ -152,12 +154,12 @@ class _HomeScreenState extends State<HomeScreen> {
   raisedButton(String title, Widget page){
     return Container(
       height: 5 * SizeConfig.heightMultiplier,
-      width: 20 * SizeConfig.widthMultiplier,
+      width: 26* SizeConfig.widthMultiplier,
       child: RaisedButton(
           onPressed: (){
             Navigator.push(context, MaterialPageRoute(builder: (context)=>page));
           },
-        child: Text(title,style: TextStyle(fontSize: 1.5 * SizeConfig.textMultiplier,)),
+        child: Text(title,style: TextStyle(fontSize: 2 * SizeConfig.textMultiplier,)),
       ),
     );
   }

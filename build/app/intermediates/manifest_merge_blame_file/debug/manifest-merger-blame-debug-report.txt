@@ -1,12 +1,12 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.form"
+3    package="com.mandar.todo_form"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-9        android:targetSdkVersion="29" />
+9        android:targetSdkVersion="30" />
 10    <!--
 11         Flutter needs it to communicate with the running application
 12         to allow setting breakpoints, to provide hot reload, etc.
@@ -30,8 +30,8 @@
 25        android:debuggable="true"
 26        android:icon="@mipmap/ic_launcher"
 26-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:11:9-43
-27        android:label="form" >
-27-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:10:9-29
+27        android:label="ToDo_Form" >
+27-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:10:9-34
 28        <activity
 28-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:12:9-40:20
 29            android:name="com.example.form.MainActivity"

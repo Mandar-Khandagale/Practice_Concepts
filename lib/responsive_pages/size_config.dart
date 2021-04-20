@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SizeConfig {
-  static double _screenWidth;
+
+   static double _screenWidth;
   static double _screenHeight;
   static double _blockSizeWidth = 0;
   static double _blockSizeHeight = 0;
@@ -14,16 +15,24 @@ class SizeConfig {
   static bool isMobilePortrait = false;
 
   void init(BoxConstraints constraints, Orientation orientation){
+    print('cons:-$constraints');
+    print('ori:-$orientation');
     if(orientation == Orientation.portrait){
+      print('mandar');
       _screenWidth = constraints.maxWidth;
       _screenHeight = constraints.maxHeight;
+      print('width=$_screenWidth');
+      print('height=$_screenHeight');
       isPortrait = true;
       if(_screenWidth <450){
         isMobilePortrait = true;
       }
     }else{
+      print('mohit');
       _screenWidth = constraints.maxHeight;
-      _screenHeight = constraints.maxWidth;
+      _screenHeight =constraints.maxWidth;
+      print('width=$_screenHeight');
+      print('height=$_screenWidth');
       isPortrait = false;
       isMobilePortrait = false;
     }
@@ -36,8 +45,6 @@ class SizeConfig {
     heightMultiplier = _blockSizeHeight;
     widthMultiplier = _blockSizeWidth;
 
-    print('width $_screenWidth');
-    print('height $_screenHeight');
 
   }
 }

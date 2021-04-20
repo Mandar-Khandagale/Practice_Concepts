@@ -5,7 +5,6 @@ INJECTED from /Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/ma
 INJECTED from /Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:1:1-47:12
 INJECTED from /Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:1:1-47:12
 MERGED from /Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:1:1-47:12
-MERGED from [:shared_preferences] /Users/apple/AndroidStudioProjects/Flutter/form/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:sqflite] /Users/apple/AndroidStudioProjects/Flutter/form/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider] /Users/apple/AndroidStudioProjects/Flutter/form/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/0986d0d74b8a2c7da8161f6370fc7744/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -47,7 +46,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/appl
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:10:9-29
+		ADDED from /Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:10:9-34
 	android:icon
 		ADDED from /Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:11:9-43
 	android:name
@@ -98,8 +97,6 @@ uses-sdk
 INJECTED from /Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml
-MERGED from [:shared_preferences] /Users/apple/AndroidStudioProjects/Flutter/form/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences] /Users/apple/AndroidStudioProjects/Flutter/form/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:sqflite] /Users/apple/AndroidStudioProjects/Flutter/form/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:sqflite] /Users/apple/AndroidStudioProjects/Flutter/form/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] /Users/apple/AndroidStudioProjects/Flutter/form/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44

@@ -9,8 +9,9 @@ import 'package:provider/provider.dart';
 
 void main() {
   runApp(
-       DevicePreview(builder:(context)=> MyApp())
-         // MyApp(),
+       DevicePreview(
+           enabled: false,
+           builder:(context)=> MyApp())
   );
 }
 

@@ -14,6 +14,12 @@
       "languageVersion": "2.7"
     },
     {
+      "name": "archive",
+      "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/archive-2.0.13",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "args",
       "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/args-1.6.0",
       "packageUri": "lib/",
@@ -188,6 +194,12 @@
       "languageVersion": "2.10"
     },
     {
+      "name": "flutter_launcher_icons",
+      "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_icons-0.8.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
       "name": "flutter_mobx",
       "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_mobx-1.1.0+2",
       "packageUri": "lib/",
@@ -234,6 +246,12 @@
       "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-3.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.3"
+    },
+    {
+      "name": "image",
+      "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/image-2.1.13",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
     },
     {
       "name": "intl",
@@ -590,7 +608,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-04-19T13:54:23.764255Z",
+  "generated": "2021-04-20T14:09:20.121348Z",
   "generator": "pub",
   "generatorVersion": "2.10.5"
 }
