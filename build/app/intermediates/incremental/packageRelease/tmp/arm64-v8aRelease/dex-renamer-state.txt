@@ -1,4 +1,0 @@
-#Tue Apr 20 19:53:12 IST 2021
-base.0=/Users/apple/AndroidStudioProjects/Flutter/form/build/app/intermediates/transforms/r8/release/0/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

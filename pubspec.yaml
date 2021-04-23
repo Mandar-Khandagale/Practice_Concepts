@@ -35,6 +35,11 @@ dependencies:
   scoped_model: ^1.1.0
   device_preview: ^0.2.0
   responsive_framework: ^0.0.1
+  location: any
+  permission_handler: any
+  oktoast: ^2.3.2
+  image_picker: any
+  image_gallery_saver: ^1.6.6
 
 
   # The following adds the Cupertino Icons font to your application.

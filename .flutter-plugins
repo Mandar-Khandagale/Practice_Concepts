@@ -1,6 +1,12 @@
 # This is a generated file; do not edit or check into version control.
+flutter_plugin_android_lifecycle=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11/
+image_gallery_saver=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/image_gallery_saver-1.6.8/
+image_picker=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.7+22/
+location=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/location-3.2.4/
+location_web=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/location_web-1.0.1/
 path_provider=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.28/
 path_provider_linux=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-0.0.1+2/
 path_provider_macos=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-0.0.4+8/
 path_provider_windows=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-0.0.4+3/
+permission_handler=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-5.1.0+2/
 sqflite=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-1.3.2+4/

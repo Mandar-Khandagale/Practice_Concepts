@@ -21,8 +21,6 @@ class SizeConfig {
       print('mandar');
       _screenWidth = constraints.maxWidth;
       _screenHeight = constraints.maxHeight;
-      print('width=$_screenWidth');
-      print('height=$_screenHeight');
       isPortrait = true;
       if(_screenWidth <450){
         isMobilePortrait = true;
@@ -31,20 +29,19 @@ class SizeConfig {
       print('mohit');
       _screenWidth = constraints.maxHeight;
       _screenHeight =constraints.maxWidth;
-      print('width=$_screenHeight');
-      print('height=$_screenWidth');
       isPortrait = false;
       isMobilePortrait = false;
     }
 
-    _blockSizeWidth = _screenWidth/100;
-    _blockSizeHeight = _screenHeight/100;
+    _blockSizeWidth = _screenWidth / 100;
+    _blockSizeHeight = _screenHeight / 100;
 
     textMultiplier = _blockSizeHeight;
     imageSizeMultiplier = _blockSizeWidth;
     heightMultiplier = _blockSizeHeight;
     widthMultiplier = _blockSizeWidth;
 
-
+    print(_blockSizeWidth);
+    print(_blockSizeHeight);
   }
 }

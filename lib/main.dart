@@ -1,5 +1,6 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:form/custom_permissions/permissions.dart';
 import 'package:form/mvvm_design_arch/employee_view_model.dart';
 import 'package:form/provider_plugin/api_response.dart';
 import 'package:form/responsive_pages/size_config.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       providers: [                //For Provider Package
         ChangeNotifierProvider(create: (context)=>ApiResponse(),),
         ChangeNotifierProvider(create: (context)=>EmployeeListViewModel(),),
+        ChangeNotifierProvider(create: (context)=>PermissionsStatus()),
       ],
       child:LayoutBuilder(
         builder: (context, constraints) {
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
                   theme: ThemeData(
                     primarySwatch: Colors.yellow,
                   ),
-                  home: HomeScreen()
+                  home: HomeScreen(),
                 );
             }
           );

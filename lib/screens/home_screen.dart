@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:form/custom_permissions/camera_screen.dart';
+import 'package:form/custom_permissions/permissions.dart';
+import 'package:form/custom_permissions/storage_permission.dart';
 import 'package:form/mvvm_design_arch/employee_list_view.dart';
 import 'package:form/responsive_pages/first_screen.dart';
 import 'package:form/responsive_pages/size_config.dart';
@@ -10,7 +13,9 @@ import 'package:form/sqflite/note_model_class.dart';
 import 'package:form/provider_plugin/user_data_screen.dart';
 import 'package:form/mobx_plugin/user_data_using_mobx.dart';
 import 'package:form/sqflite/database_helper.dart';
+import 'package:provider/provider.dart';
 import 'package:sqflite/sqflite.dart';
+//import 'package:location/location.dart';
 
 /// Main Screen where List<Note> appear to the User
 
@@ -21,9 +26,37 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
 
+  // PermissionStatus _permissionStatus;
+  // Location location = Location();
+
+  // Future<void> _checkPermissions() async {
+  //   final PermissionStatus permissionGrantedResult = await location.hasPermission();
+  //   setState(() {
+  //     _permissionStatus = permissionGrantedResult;
+  //   });
+  //   print('Permission Status:-$_permissionStatus');
+  // }
+  //
+  // Future<void> _requestPermission() async {
+  //   if (_permissionStatus != PermissionStatus.granted) {
+  //     final PermissionStatus permissionRequestedResult =
+  //     await location.requestPermission();
+  //     setState(() {
+  //       _permissionStatus = permissionRequestedResult;
+  //     });
+  //   }
+  // }
+
   DatabaseHelper databaseHelper = DatabaseHelper();
   List<Note> noteList;
   int count =0;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+   Provider.of<PermissionsStatus>(context,listen: false).requestLocationPermission();
+  }
   @override
   Widget build(BuildContext context) {
     if(noteList == null){
@@ -35,6 +68,12 @@ class _HomeScreenState extends State<HomeScreen> {
         elevation: 0.0,
         centerTitle: true,
         title: Text('Notes',style: TextStyle(fontSize: 3.5 * SizeConfig.textMultiplier),),
+        leading: IconButton(
+          icon: Icon(Icons.camera,size: 4 * SizeConfig.heightMultiplier,color: Colors.black,),
+          onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>CameraScreen()));
+          },
+        ),
         actions: [
           IconButton(
               icon: Icon(Icons.skip_next_sharp,size: 4 * SizeConfig.heightMultiplier,),
@@ -69,6 +108,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 Expanded(flex: 1,child:raisedButton('RxDart',RxDartUserList()),),
                 SizedBox(width: 4 *SizeConfig.widthMultiplier,),
                 Expanded(flex: 1, child: raisedButton('Scope Model',ScopeModelUserView()),),
+                SizedBox(width: 4 *SizeConfig.widthMultiplier,),
+                Expanded(flex: 1, child: raisedButton('Permission',StoragePermission()),),
+
               ],
                 ),
             ),
@@ -98,6 +140,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)=>FirstResponsivePage()));
             }),
+            SizedBox(height: 10.0,),
+            // FloatingActionButton(
+            //     heroTag: 'bt3',
+            //     child: Icon(Icons.perm_device_info),
+            //     onPressed: (){
+            //      _checkPermissions();
+            //     }),
           ],
         ),
       ),
@@ -154,12 +203,12 @@ class _HomeScreenState extends State<HomeScreen> {
   raisedButton(String title, Widget page){
     return Container(
       height: 5 * SizeConfig.heightMultiplier,
-      width: 26* SizeConfig.widthMultiplier,
+      width: 25* SizeConfig.widthMultiplier,
       child: RaisedButton(
           onPressed: (){
             Navigator.push(context, MaterialPageRoute(builder: (context)=>page));
           },
-        child: Text(title,style: TextStyle(fontSize: 2 * SizeConfig.textMultiplier,)),
+        child: Text(title,style: TextStyle(fontSize: 1.6 * SizeConfig.textMultiplier,)),
       ),
     );
   }
