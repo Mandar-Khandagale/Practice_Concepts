@@ -3,6 +3,7 @@ import 'package:form/custom_permissions/camera_screen.dart';
 import 'package:form/custom_permissions/permissions.dart';
 import 'package:form/custom_permissions/storage_permission.dart';
 import 'package:form/mvvm_design_arch/employee_list_view.dart';
+import 'package:form/platform_specific_code/battery_level.dart';
 import 'package:form/responsive_pages/first_screen.dart';
 import 'package:form/responsive_pages/size_config.dart';
 import 'package:form/rxdart_plugin/userlist_rxdart.dart';
@@ -141,12 +142,14 @@ class _HomeScreenState extends State<HomeScreen> {
               Navigator.push(context, MaterialPageRoute(builder: (context)=>FirstResponsivePage()));
             }),
             SizedBox(height: 10.0,),
-            // FloatingActionButton(
-            //     heroTag: 'bt3',
-            //     child: Icon(Icons.perm_device_info),
-            //     onPressed: (){
-            //      _checkPermissions();
-            //     }),
+            FloatingActionButton(
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>BatteryLevel()));
+              },
+              heroTag: 'bt3',
+              child: Icon(Icons.battery_charging_full,color: Colors.green,),
+            ),
+            SizedBox(height: 10.0,),
           ],
         ),
       ),

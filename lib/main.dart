@@ -6,6 +6,8 @@ import 'package:form/firebase_demo/user.dart';
 import 'package:form/firebase_demo/wrapper.dart';
 import 'package:form/mvvm_design_arch/employee_view_model.dart';
 import 'package:form/provider_plugin/api_response.dart';
+import 'package:form/responsive_pages/size_config.dart';
+import 'package:form/screens/home_screen.dart';
 import 'package:provider/provider.dart';
 
 
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
         builder: (context, constraints) {
           return OrientationBuilder(
             builder: (context, orientation) {
-              //SizeConfig().init(constraints, orientation);
+              SizeConfig().init(constraints, orientation);
               return StreamProvider<User>.value(
                 value: AuthService().user,
                 child: MaterialApp(
@@ -40,8 +42,8 @@ class MyApp extends StatelessWidget {
                     theme: ThemeData(
                       primarySwatch: Colors.yellow,
                     ),
-                  //home: HomeScreen(),//for other implementation
-                  home:Wrapper(), //for firebase implementation
+                  home: HomeScreen(),//for other implementation
+                  //home:Wrapper(), //for firebase implementation
                   ),
               );
             }
