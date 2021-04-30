@@ -20,6 +20,10 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+    <string>This app requires to save your images user gallery</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Your app requests When In Use authorization or Always authorization</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

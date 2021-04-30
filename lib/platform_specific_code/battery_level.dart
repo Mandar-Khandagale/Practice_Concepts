@@ -9,6 +9,7 @@ class BatteryLevel extends StatefulWidget {
 class _BatteryLevelState extends State<BatteryLevel> {
 
   String _batteryPer = 'Battery %';
+  double _opacity = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -22,12 +23,20 @@ class _BatteryLevelState extends State<BatteryLevel> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             RaisedButton(
-              onPressed: _getBatteryInfo,
+              onPressed: (){
+                _getBatteryInfo();
+                setState(() {
+                  _opacity = 1;
+                });
+              },
               color: Colors.lightBlue,
               child: Text('Get Battery %',),
                 ),
             SizedBox(height: 20.0,),
-            Text(_batteryPer,style: TextStyle(fontSize: 25.0),)
+            AnimatedOpacity(
+              duration: Duration(seconds: 2),
+                opacity: _opacity,
+                child: Text(_batteryPer,style: TextStyle(fontSize: 25.0),)),
           ],
         ),
       ),
