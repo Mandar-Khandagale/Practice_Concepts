@@ -3,6 +3,7 @@ cloud_firestore=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.or
 firebase_auth=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.14.0+9/
 firebase_core=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.5/
 firebase_core_web=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.1.1+2/
+flutter_local_notifications=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-1.5.0+1/
 flutter_plugin_android_lifecycle=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11/
 image_gallery_saver=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/image_gallery_saver-1.6.8/
 image_picker=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.7+22/
