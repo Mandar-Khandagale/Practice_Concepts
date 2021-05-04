@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:form/model_classes/employee_model.dart';
 import 'package:form/mvvm_design_arch/employee_detail.dart';
 import 'package:form/mvvm_design_arch/employee_view_model.dart';
 import 'package:form/mvvm_design_arch/screen_title.dart';
@@ -11,11 +12,62 @@ class EmployeeListView extends StatefulWidget {
 
 class _EmployeeListViewState extends State<EmployeeListView> {
 
+  GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
+  List<Widget> _empList = [];
+
   @override
   void initState() {
-    Provider.of<EmployeeListViewModel>(context,listen: false).getData();
     super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) async{
+    var providerValue = await Provider.of<EmployeeListViewModel>(context,listen: false).getData();
+      _addEmp(providerValue);
+    });
   }
+
+  void _addEmp(List<EmployeeModel> empList){
+
+    Future future = Future((){});
+
+    empList.forEach((EmployeeModel data) {
+      future = future.then((value) {
+        return Future.delayed(Duration(milliseconds: 200),(){
+          _empList.add(_buildTile(data));
+          _listKey.currentState.insertItem(_empList.length-1);
+        });
+      });
+    });
+  }
+
+  Widget _buildTile(EmployeeModel emp) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.lightBlue[100],
+        borderRadius: BorderRadius.circular(20.0),
+      ),
+      child:
+      ListTile(
+        onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>
+              EmployeeDetails(emp: emp,)));
+        },
+        leading: Hero(
+          tag: 'img-${emp.avatar}',
+          child: Container(
+            width: 50.0,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              image: DecorationImage(image: NetworkImage(emp.avatar,),
+                  fit: BoxFit.fill),
+            ),
+          ),
+        ),
+        title: Text(emp.firstName+ ' ' +emp.lastName,
+          style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.w500),),
+        subtitle: Text(emp.email,style: TextStyle(fontSize: 15.0),),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,54 +103,26 @@ class _EmployeeListViewState extends State<EmployeeListView> {
     );
   }
 
+  Tween<Offset> _offset = Tween(begin: Offset(1,0), end: Offset(0,0));
+
   employeeList() {
     return Container(
-      child: Consumer<EmployeeListViewModel>(
-          builder: (context, data, child){
-            print("zxcv:-${data.employeeData}");
-            if(data.employeeData == null){
-              return Center(child: CircularProgressIndicator(),);
-            }
-            else{
-              return Padding(
+      child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: ListView.builder(
+                child: AnimatedList(
+                  key: _listKey,
                   physics: BouncingScrollPhysics(),
-                    itemCount: data.employeeData.length,
-                    itemBuilder: (context, index){
-                      return Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.lightBlue[100],
-                            borderRadius: BorderRadius.circular(20.0),
-                          ),
-                          child: ListTile(
-                            onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>
-                                  EmployeeDetails(emp: data.employeeData[index],)));
-                            },
-                            leading: Hero(
-                              tag: 'img-${data.employeeData[index].avatar}',
-                              child: Container(
-                                width: 50.0,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(image: NetworkImage(data.employeeData[index].avatar,),
-                                  fit: BoxFit.fill),
-                                ),
-                              ),
-                            ),
-                            title: Text(data.employeeData[index].firstName+ ' ' +data.employeeData[index].lastName,
-                            style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.w500),),
-                            subtitle: Text(data.employeeData[index].email,style: TextStyle(fontSize: 15.0),),
-                          ),
+                    initialItemCount: _empList.length,
+                    itemBuilder: (context, index, animation){
+                      return SlideTransition(
+                        position: animation.drive(_offset),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: _empList[index],
                         ),
                       );
                     }),
-              );
-            }
-          }),
+              ),
     );
   }
 }

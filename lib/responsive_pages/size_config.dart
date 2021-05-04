@@ -15,10 +15,10 @@ class SizeConfig {
   static bool isMobilePortrait = false;
 
   void init(BoxConstraints constraints, Orientation orientation){
-    print('cons:-$constraints');
-    print('ori:-$orientation');
+    // print('cons:-$constraints');
+    // print('ori:-$orientation');
     if(orientation == Orientation.portrait){
-      print('mandar');
+      // print('mandar');
       _screenWidth = constraints.maxWidth;
       _screenHeight = constraints.maxHeight;
       isPortrait = true;
