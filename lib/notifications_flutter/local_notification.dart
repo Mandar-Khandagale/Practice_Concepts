@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:form/notifications_flutter/firebase_push_notification.dart';
 
 /// Local Notification Handling in flutter
 
@@ -20,25 +21,25 @@ class _LocalNotificationState extends State<LocalNotification> {
     super.initState();
     var androidInitialize = AndroidInitializationSettings('app_icon');
     var iosInitialize = IOSInitializationSettings();
-    var initializeSetting = InitializationSettings(androidInitialize, iosInitialize);
+    var initializeSetting = InitializationSettings(android: androidInitialize, iOS: iosInitialize);
     _flutterLocalNotifications.initialize(initializeSetting,onSelectNotification: notificationSelected);
   }
 
   // to show instant notification on button pressed
   Future _showInstantNotification() async{
     var androidDetails = AndroidNotificationDetails('Mandar', 'Test Notification', 'My 1st test notification',
-    importance: Importance.High);
+    importance: Importance.high);
     var iosDetails = IOSNotificationDetails();
-    var generalNotificationDetails = NotificationDetails(androidDetails, iosDetails);
+    var generalNotificationDetails = NotificationDetails(android: androidDetails, iOS: iosDetails);
 
     await _flutterLocalNotifications.show(0, 'Test Notification', 'My test instant notification', generalNotificationDetails);
   }
   // to show scheduled notification on button pressed after given period of time
   Future _showScheduledNotification() async {
     var androidDetails = AndroidNotificationDetails('Mandar', 'Test Notification', 'My 1st test notification',
-        importance: Importance.High);
+        importance: Importance.high);
     var iosDetails = IOSNotificationDetails();
-    var generalNotificationDetails = NotificationDetails(androidDetails, iosDetails);
+    var generalNotificationDetails = NotificationDetails(android: androidDetails, iOS: iosDetails);
 
     var scheduleTime ; // DateTime.now().add(Duration(seconds: 5));
     if(selectTime == 'Hours'){
@@ -58,6 +59,30 @@ class _LocalNotificationState extends State<LocalNotification> {
       appBar: AppBar(
         centerTitle: true,
         title: Text("Local Notifications"),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.nat),
+        onPressed: () {
+          Navigator.push(
+              context,
+              PageRouteBuilder(
+                  transitionDuration: Duration(milliseconds: 500),
+                  transitionsBuilder: (BuildContext context,
+                      Animation<double> animation,
+                      Animation<double> secanimation,
+                      Widget child) {
+                    return ScaleTransition(
+                      alignment: Alignment.center,
+                      scale: animation,
+                      child: child,
+                    );
+                  },
+                  pageBuilder: (BuildContext context,
+                      Animation<double> animation,
+                      Animation<double> secanimation) {
+                    return PushNotification();
+                  }));
+        },
       ),
       body: Center(
         child: Column(

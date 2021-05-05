@@ -5,6 +5,7 @@ import 'package:form/firebase_demo/authenticate_services.dart';
 import 'package:form/firebase_demo/user.dart';
 import 'package:form/firebase_demo/wrapper.dart';
 import 'package:form/mvvm_design_arch/employee_view_model.dart';
+import 'package:form/notifications_flutter/firebase_push_notification.dart';
 import 'package:form/notifications_flutter/local_notification.dart';
 import 'package:form/provider_plugin/api_response.dart';
 import 'package:form/responsive_pages/size_config.dart';
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
                   //home: HomeScreen(),//for other implementation
                   //home:Wrapper(), //for firebase implementation
                   home: LocalNotification(),  // for Local Notification
+                  //home: PushNotification(),
                   ),
               );
             }

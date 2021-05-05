@@ -35,215 +35,305 @@
 21    <uses-permission android:name="android.permission.VIBRATE" />
 21-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:15:9-69
 21-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:15:26-67
-22    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+22    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 22-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:16:9-84
 22-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:16:26-82
-23    <!-- <uses-sdk android:minSdkVersion="14" /> -->
-24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-24-->[com.google.firebase:firebase-firestore:21.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/443d6a61af69c4d02b657cba81a2ac85/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:13:5-79
-24-->[com.google.firebase:firebase-firestore:21.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/443d6a61af69c4d02b657cba81a2ac85/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:13:22-76
-25
-26    <application
-26-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:17:5-63:19
-27        android:name="io.flutter.app.FlutterApplication"
-27-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:18:9-57
-28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-28-->[androidx.core:core:1.3.2] /Users/apple/.gradle/caches/transforms-2/files-2.1/57fa81c5e12a1b2319c59d7bad5e408a/core-1.3.2/AndroidManifest.xml:24:18-86
-29        android:debuggable="true"
-30        android:icon="@mipmap/ic_launcher"
-30-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:21:9-43
-31        android:label="ToDo_Form"
-31-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:19:9-34
-32        android:requestLegacyExternalStorage="true" >
-32-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:20:9-52
-33        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
-33-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:22:9-27:20
-33-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:22:19-107
-34            <intent-filter>
-34-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:23:13-26:29
-35                <action android:name="android.intent.action.BOOT_COMPLETED" />
-35-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:24:17-78
-35-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:24:25-76
-36                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-36-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:25:17-83
-36-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:25:25-81
-37            </intent-filter>
-38        </receiver>
-39        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
-39-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:28:9-105
-39-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:28:19-103
-40
-41        <activity
-41-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:29:9-57:20
-42            android:name="com.example.form.MainActivity"
-42-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:30:13-41
-43            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-43-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:33:13-163
-44            android:hardwareAccelerated="true"
-44-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:34:13-47
-45            android:launchMode="singleTop"
-45-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:31:13-43
-46            android:theme="@style/LaunchTheme"
-46-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:32:13-47
-47            android:windowSoftInputMode="adjustResize" >
-47-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:35:13-55
-48
-49            <!--
-50                 Specifies an Android theme to apply to this Activity as soon as
-51                 the Android process has started. This theme is visible to the user
-52                 while the Flutter UI initializes. After that, this theme continues
-53                 to determine the Window background behind the Flutter UI.
-54            -->
-55            <meta-data
-55-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:40:13-43:17
-56                android:name="io.flutter.embedding.android.NormalTheme"
-56-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:41:15-70
-57                android:resource="@style/NormalTheme" />
-57-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:42:15-52
+23    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+23-->[:flutter_local_notifications] /Users/apple/AndroidStudioProjects/Flutter/form/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-81
+23-->[:flutter_local_notifications] /Users/apple/AndroidStudioProjects/Flutter/form/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-78
+24    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->[com.google.firebase:firebase-firestore:21.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/443d6a61af69c4d02b657cba81a2ac85/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:13:5-79
+25-->[com.google.firebase:firebase-firestore:21.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/443d6a61af69c4d02b657cba81a2ac85/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:13:22-76
+26    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+26-->[com.google.firebase:firebase-iid:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/71dc868852144548b68266a076cea9c7/firebase-iid-20.0.1/AndroidManifest.xml:24:5-68
+26-->[com.google.firebase:firebase-iid:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/71dc868852144548b68266a076cea9c7/firebase-iid-20.0.1/AndroidManifest.xml:24:22-65
+27    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+27-->[com.google.firebase:firebase-iid:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/71dc868852144548b68266a076cea9c7/firebase-iid-20.0.1/AndroidManifest.xml:26:5-82
+27-->[com.google.firebase:firebase-iid:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/71dc868852144548b68266a076cea9c7/firebase-iid-20.0.1/AndroidManifest.xml:26:22-79
+28
+29    <application
+29-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:17:5-67:19
+30        android:name="com.example.form.Application"
+30-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:18:9-36
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.3.2] /Users/apple/.gradle/caches/transforms-2/files-2.1/57fa81c5e12a1b2319c59d7bad5e408a/core-1.3.2/AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@mipmap/ic_launcher"
+33-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:21:9-43
+34        android:label="ToDo_Form"
+34-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:19:9-34
+35        android:requestLegacyExternalStorage="true" >
+35-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:20:9-52
+36        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
+36-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:22:9-27:20
+36-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:22:19-107
+37            <intent-filter>
+37-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:23:13-26:29
+38                <action android:name="android.intent.action.BOOT_COMPLETED" />
+38-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:24:17-78
+38-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:24:25-76
+39                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+39-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:25:17-83
+39-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:25:25-81
+40            </intent-filter>
+41            <intent-filter>
+41-->[:flutter_local_notifications] /Users/apple/AndroidStudioProjects/Flutter/form/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-19:29
+42                <action android:name="android.intent.action.BOOT_COMPLETED" />
+42-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:24:17-78
+42-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:24:25-76
+43                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+43-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:25:17-83
+43-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:25:25-81
+44                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+44-->[:flutter_local_notifications] /Users/apple/AndroidStudioProjects/Flutter/form/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-82
+44-->[:flutter_local_notifications] /Users/apple/AndroidStudioProjects/Flutter/form/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:17:25-79
+45                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+45-->[:flutter_local_notifications] /Users/apple/AndroidStudioProjects/Flutter/form/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-82
+45-->[:flutter_local_notifications] /Users/apple/AndroidStudioProjects/Flutter/form/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:18:25-79
+46            </intent-filter>
+47        </receiver>
+48        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
+48-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:28:9-105
+48-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:28:19-103
+49
+50        <activity
+50-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:29:9-61:20
+51            android:name="com.example.form.MainActivity"
+51-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:30:13-41
+52            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+52-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:33:13-163
+53            android:hardwareAccelerated="true"
+53-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:34:13-47
+54            android:launchMode="singleTop"
+54-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:31:13-43
+55            android:theme="@style/LaunchTheme"
+55-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:32:13-47
+56            android:windowSoftInputMode="adjustResize" >
+56-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:35:13-55
+57
 58            <!--
-59                 Displays an Android View that continues showing the launch screen
-60                 Drawable until Flutter paints its first frame, then this splash
-61                 screen fades out. A splash screen is useful to avoid any visual
-62                 gap between the end of Android's launch screen and the painting of
-63                 Flutter's first frame.
-64            -->
-65            <meta-data
-65-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:49:13-52:17
-66                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-66-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:50:15-79
-67                android:resource="@drawable/launch_background" />
-67-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:51:15-61
-68
-69            <intent-filter>
-69-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:53:13-56:29
-70                <action android:name="android.intent.action.MAIN" />
-70-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:54:17-68
-70-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:54:25-66
-71
-72                <category android:name="android.intent.category.LAUNCHER" />
-72-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:55:17-76
-72-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:55:27-74
-73            </intent-filter>
-74        </activity>
-75        <!--
-76             Don't delete the meta-data below.
-77             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-78        -->
-79        <meta-data
-79-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:60:9-62:33
-80            android:name="flutterEmbedding"
-80-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:61:13-44
-81            android:value="2" />
-81-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:62:13-30
-82
-83        <provider
-83-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
-84            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-84-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
-85            android:authorities="com.mandar.todo_form.flutter.image_provider"
-85-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
-86            android:exported="false"
-86-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
-87            android:grantUriPermissions="true" >
-87-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
-88            <meta-data
-88-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
-89                android:name="android.support.FILE_PROVIDER_PATHS"
-89-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
-90                android:resource="@xml/flutter_image_picker_file_paths" />
-90-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
-91        </provider>
-92
-93        <service
-93-->[:cloud_firestore] /Users/apple/AndroidStudioProjects/Flutter/form/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-94            android:name="com.google.firebase.components.ComponentDiscoveryService"
-94-->[:cloud_firestore] /Users/apple/AndroidStudioProjects/Flutter/form/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
-95            android:directBootAware="true"
-95-->[com.google.firebase:firebase-common:19.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/fa47b80d32da6f30dbce493884661ef9/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
-96            android:exported="false" >
-96-->[com.google.firebase:firebase-firestore:21.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/443d6a61af69c4d02b657cba81a2ac85/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:19:13-37
-97            <meta-data
-97-->[:cloud_firestore] /Users/apple/AndroidStudioProjects/Flutter/form/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
-98                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar"
-98-->[:cloud_firestore] /Users/apple/AndroidStudioProjects/Flutter/form/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-133
-99                android:value="com.google.firebase.components.ComponentRegistrar" />
-99-->[:cloud_firestore] /Users/apple/AndroidStudioProjects/Flutter/form/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
-100            <meta-data
-100-->[:firebase_auth] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
-101                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
-101-->[:firebase_auth] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
-102                android:value="com.google.firebase.components.ComponentRegistrar" />
-102-->[:firebase_auth] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
-103            <meta-data
-103-->[:firebase_core] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
-104                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
-104-->[:firebase_core] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
-105                android:value="com.google.firebase.components.ComponentRegistrar" />
-105-->[:firebase_core] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
-106            <meta-data
-106-->[com.google.firebase:firebase-firestore:21.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/443d6a61af69c4d02b657cba81a2ac85/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:20:13-22:85
-107                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-107-->[com.google.firebase:firebase-firestore:21.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/443d6a61af69c4d02b657cba81a2ac85/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:21:17-111
-108                android:value="com.google.firebase.components.ComponentRegistrar" />
-108-->[com.google.firebase:firebase-firestore:21.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/443d6a61af69c4d02b657cba81a2ac85/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:22:17-82
-109            <meta-data
-109-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:36:13-38:85
-110                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-110-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:37:17-109
-111                android:value="com.google.firebase.components.ComponentRegistrar" />
-111-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:38:17-82
-112        </service>
-113        <service
-113-->[:location] /Users/apple/AndroidStudioProjects/Flutter/form/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-15:56
-114            android:name="com.lyokone.location.FlutterLocationService"
-114-->[:location] /Users/apple/AndroidStudioProjects/Flutter/form/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-71
-115            android:enabled="true"
-115-->[:location] /Users/apple/AndroidStudioProjects/Flutter/form/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-35
-116            android:exported="false"
-116-->[:location] /Users/apple/AndroidStudioProjects/Flutter/form/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
-117            android:foregroundServiceType="location" />
-117-->[:location] /Users/apple/AndroidStudioProjects/Flutter/form/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-53
-118
-119        <activity
-119-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:24:9-31:50
-120            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-120-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:25:13-85
-121            android:excludeFromRecents="true"
-121-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:26:13-46
-122            android:exported="true"
-122-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:27:13-36
-123            android:launchMode="singleTask"
-123-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:28:13-44
-124            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-124-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:29:13-102
-125            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-125-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:30:13-72
-126        <activity
-126-->[com.google.android.gms:play-services-base:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/dfda874e59ae708b9dea8d783cda1c4f/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-127            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-127-->[com.google.android.gms:play-services-base:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/dfda874e59ae708b9dea8d783cda1c4f/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-128            android:exported="false"
-128-->[com.google.android.gms:play-services-base:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/dfda874e59ae708b9dea8d783cda1c4f/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-129            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-129-->[com.google.android.gms:play-services-base:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/dfda874e59ae708b9dea8d783cda1c4f/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-130
-131        <provider
-131-->[com.google.firebase:firebase-common:19.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/fa47b80d32da6f30dbce493884661ef9/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
-132            android:name="com.google.firebase.provider.FirebaseInitProvider"
-132-->[com.google.firebase:firebase-common:19.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/fa47b80d32da6f30dbce493884661ef9/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-133            android:authorities="com.mandar.todo_form.firebaseinitprovider"
-133-->[com.google.firebase:firebase-common:19.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/fa47b80d32da6f30dbce493884661ef9/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
-134            android:exported="false"
-134-->[com.google.firebase:firebase-common:19.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/fa47b80d32da6f30dbce493884661ef9/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
-135            android:initOrder="100" />
-135-->[com.google.firebase:firebase-common:19.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/fa47b80d32da6f30dbce493884661ef9/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
-136
-137        <meta-data
-137-->[com.google.android.gms:play-services-basement:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/3830fdc5f1e2c554a7f2dca731f7ea16/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-138            android:name="com.google.android.gms.version"
-138-->[com.google.android.gms:play-services-basement:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/3830fdc5f1e2c554a7f2dca731f7ea16/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-139            android:value="@integer/google_play_services_version" />
-139-->[com.google.android.gms:play-services-basement:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/3830fdc5f1e2c554a7f2dca731f7ea16/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-140    </application>
-141
-142</manifest>
+59                 Specifies an Android theme to apply to this Activity as soon as
+60                 the Android process has started. This theme is visible to the user
+61                 while the Flutter UI initializes. After that, this theme continues
+62                 to determine the Window background behind the Flutter UI.
+63            -->
+64            <meta-data
+64-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:40:13-43:17
+65                android:name="io.flutter.embedding.android.NormalTheme"
+65-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:41:15-70
+66                android:resource="@style/NormalTheme" />
+66-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:42:15-52
+67            <!--
+68                 Displays an Android View that continues showing the launch screen
+69                 Drawable until Flutter paints its first frame, then this splash
+70                 screen fades out. A splash screen is useful to avoid any visual
+71                 gap between the end of Android's launch screen and the painting of
+72                 Flutter's first frame.
+73            -->
+74            <meta-data
+74-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:49:13-52:17
+75                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+75-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:50:15-79
+76                android:resource="@drawable/launch_background" />
+76-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:51:15-61
+77
+78            <intent-filter>
+78-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:53:13-56:29
+79                <action android:name="android.intent.action.MAIN" />
+79-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:54:17-68
+79-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:54:25-66
+80
+81                <category android:name="android.intent.category.LAUNCHER" />
+81-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:55:17-76
+81-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:55:27-74
+82            </intent-filter>
+83            <intent-filter>
+83-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:57:13-60:29
+84                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+84-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:58:17-69
+84-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:58:25-66
+85
+86                <category android:name="android.intent.category.DEFAULT" />
+86-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:59:17-76
+86-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:59:27-73
+87            </intent-filter>
+88        </activity>
+89        <!--
+90             Don't delete the meta-data below.
+91             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+92        -->
+93        <meta-data
+93-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:64:9-66:33
+94            android:name="flutterEmbedding"
+94-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:65:13-44
+95            android:value="2" />
+95-->/Users/apple/AndroidStudioProjects/Flutter/form/android/app/src/main/AndroidManifest.xml:66:13-30
+96
+97        <provider
+97-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
+98            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+98-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
+99            android:authorities="com.mandar.todo_form.flutter.image_provider"
+99-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
+100            android:exported="false"
+100-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+101            android:grantUriPermissions="true" >
+101-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
+102            <meta-data
+102-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
+103                android:name="android.support.FILE_PROVIDER_PATHS"
+103-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
+104                android:resource="@xml/flutter_image_picker_file_paths" />
+104-->[:image_picker] /Users/apple/AndroidStudioProjects/Flutter/form/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
+105        </provider>
+106
+107        <service android:name="io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService" >
+107-->[:firebase_messaging] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+107-->[:firebase_messaging] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-101
+108            <intent-filter>
+108-->[:firebase_messaging] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:29
+109                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+109-->[:firebase_messaging] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-78
+109-->[:firebase_messaging] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:10:25-75
+110            </intent-filter>
+111        </service>
+112        <service
+112-->[:firebase_messaging] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-17:19
+113            android:name="com.google.firebase.components.ComponentDiscoveryService"
+113-->[:firebase_messaging] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:13:18-89
+114            android:directBootAware="true"
+114-->[com.google.firebase:firebase-common:19.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/fa47b80d32da6f30dbce493884661ef9/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+115            android:exported="false" >
+115-->[com.google.firebase:firebase-firestore:21.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/443d6a61af69c4d02b657cba81a2ac85/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:19:13-37
+116            <meta-data
+116-->[:firebase_messaging] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-16:85
+117                android:name="com.google.firebase.components:io.flutter.plugins.firebasemessaging.FlutterFirebaseAppRegistrar"
+117-->[:firebase_messaging] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-127
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[:firebase_messaging] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-82
+119            <meta-data
+119-->[:cloud_firestore] /Users/apple/AndroidStudioProjects/Flutter/form/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+120                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar"
+120-->[:cloud_firestore] /Users/apple/AndroidStudioProjects/Flutter/form/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-133
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[:cloud_firestore] /Users/apple/AndroidStudioProjects/Flutter/form/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+122            <meta-data
+122-->[:firebase_auth] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+123                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
+123-->[:firebase_auth] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[:firebase_auth] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+125            <meta-data
+125-->[:firebase_core] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+126                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
+126-->[:firebase_core] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[:firebase_core] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-firestore:21.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/443d6a61af69c4d02b657cba81a2ac85/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:20:13-22:85
+129                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+129-->[com.google.firebase:firebase-firestore:21.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/443d6a61af69c4d02b657cba81a2ac85/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:21:17-111
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-firestore:21.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/443d6a61af69c4d02b657cba81a2ac85/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:22:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:36:13-38:85
+132                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+132-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:37:17-109
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:38:17-82
+134            <meta-data
+134-->[com.google.firebase:firebase-iid:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/71dc868852144548b68266a076cea9c7/firebase-iid-20.0.1/AndroidManifest.xml:32:13-34:85
+135                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+135-->[com.google.firebase:firebase-iid:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/71dc868852144548b68266a076cea9c7/firebase-iid-20.0.1/AndroidManifest.xml:33:17-96
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.firebase:firebase-iid:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/71dc868852144548b68266a076cea9c7/firebase-iid-20.0.1/AndroidManifest.xml:34:17-82
+137        </service>
+138        <service
+138-->[:location] /Users/apple/AndroidStudioProjects/Flutter/form/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-15:56
+139            android:name="com.lyokone.location.FlutterLocationService"
+139-->[:location] /Users/apple/AndroidStudioProjects/Flutter/form/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-71
+140            android:enabled="true"
+140-->[:location] /Users/apple/AndroidStudioProjects/Flutter/form/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-35
+141            android:exported="false"
+141-->[:location] /Users/apple/AndroidStudioProjects/Flutter/form/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+142            android:foregroundServiceType="location" />
+142-->[:location] /Users/apple/AndroidStudioProjects/Flutter/form/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-53
+143        <!--
+144             FirebaseMessagingService performs security checks at runtime,
+145             but set to not exported to explicitly avoid allowing another app to call it.
+146        -->
+147        <service
+147-->[com.google.firebase:firebase-messaging:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/5d5d46ee9164fa8e8b96c92a2524996a/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:28:9-34:19
+148            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+148-->[com.google.firebase:firebase-messaging:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/5d5d46ee9164fa8e8b96c92a2524996a/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:29:13-82
+149            android:exported="false" >
+149-->[com.google.firebase:firebase-messaging:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/5d5d46ee9164fa8e8b96c92a2524996a/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:30:13-37
+150            <intent-filter android:priority="-500" >
+150-->[:firebase_messaging] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:29
+151                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+151-->[:firebase_messaging] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-78
+151-->[:firebase_messaging] /Users/apple/AndroidStudioProjects/Flutter/form/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:10:25-75
+152            </intent-filter>
+153        </service>
+154
+155        <activity
+155-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:24:9-31:50
+156            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+156-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:25:13-85
+157            android:excludeFromRecents="true"
+157-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:26:13-46
+158            android:exported="true"
+158-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:27:13-36
+159            android:launchMode="singleTask"
+159-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:28:13-44
+160            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+160-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:29:13-102
+161            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+161-->[com.google.firebase:firebase-auth:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/49013d9f98ea70554f7da3726e72a410/jetified-firebase-auth-17.0.0/AndroidManifest.xml:30:13-72
+162
+163        <receiver
+163-->[com.google.firebase:firebase-iid:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/71dc868852144548b68266a076cea9c7/firebase-iid-20.0.1/AndroidManifest.xml:37:9-44:20
+164            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+164-->[com.google.firebase:firebase-iid:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/71dc868852144548b68266a076cea9c7/firebase-iid-20.0.1/AndroidManifest.xml:38:13-78
+165            android:exported="true"
+165-->[com.google.firebase:firebase-iid:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/71dc868852144548b68266a076cea9c7/firebase-iid-20.0.1/AndroidManifest.xml:39:13-36
+166            android:permission="com.google.android.c2dm.permission.SEND" >
+166-->[com.google.firebase:firebase-iid:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/71dc868852144548b68266a076cea9c7/firebase-iid-20.0.1/AndroidManifest.xml:40:13-73
+167            <intent-filter>
+167-->[com.google.firebase:firebase-iid:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/71dc868852144548b68266a076cea9c7/firebase-iid-20.0.1/AndroidManifest.xml:41:13-43:29
+168                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+168-->[com.google.firebase:firebase-iid:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/71dc868852144548b68266a076cea9c7/firebase-iid-20.0.1/AndroidManifest.xml:42:17-81
+168-->[com.google.firebase:firebase-iid:20.0.1] /Users/apple/.gradle/caches/transforms-2/files-2.1/71dc868852144548b68266a076cea9c7/firebase-iid-20.0.1/AndroidManifest.xml:42:25-78
+169            </intent-filter>
+170        </receiver>
+171
+172        <provider
+172-->[com.google.firebase:firebase-common:19.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/fa47b80d32da6f30dbce493884661ef9/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+173            android:name="com.google.firebase.provider.FirebaseInitProvider"
+173-->[com.google.firebase:firebase-common:19.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/fa47b80d32da6f30dbce493884661ef9/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+174            android:authorities="com.mandar.todo_form.firebaseinitprovider"
+174-->[com.google.firebase:firebase-common:19.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/fa47b80d32da6f30dbce493884661ef9/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+175            android:exported="false"
+175-->[com.google.firebase:firebase-common:19.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/fa47b80d32da6f30dbce493884661ef9/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+176            android:initOrder="100" />
+176-->[com.google.firebase:firebase-common:19.3.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/fa47b80d32da6f30dbce493884661ef9/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+177
+178        <activity
+178-->[com.google.android.gms:play-services-base:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/dfda874e59ae708b9dea8d783cda1c4f/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+179            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+179-->[com.google.android.gms:play-services-base:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/dfda874e59ae708b9dea8d783cda1c4f/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+180            android:exported="false"
+180-->[com.google.android.gms:play-services-base:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/dfda874e59ae708b9dea8d783cda1c4f/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+181            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+181-->[com.google.android.gms:play-services-base:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/dfda874e59ae708b9dea8d783cda1c4f/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+182
+183        <meta-data
+183-->[com.google.android.gms:play-services-basement:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/3830fdc5f1e2c554a7f2dca731f7ea16/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+184            android:name="com.google.android.gms.version"
+184-->[com.google.android.gms:play-services-basement:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/3830fdc5f1e2c554a7f2dca731f7ea16/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+185            android:value="@integer/google_play_services_version" />
+185-->[com.google.android.gms:play-services-basement:17.0.0] /Users/apple/.gradle/caches/transforms-2/files-2.1/3830fdc5f1e2c554a7f2dca731f7ea16/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+186    </application>
+187
+188</manifest>

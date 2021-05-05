@@ -218,6 +218,12 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "firebase_messaging",
+      "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-6.0.16",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "fixnum",
       "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/fixnum-0.10.11",
       "packageUri": "lib/",
@@ -237,13 +243,13 @@
     },
     {
       "name": "flutter_local_notifications",
-      "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-1.5.0+1",
+      "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.6"
     },
     {
       "name": "flutter_local_notifications_platform_interface",
-      "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications_platform_interface-1.0.1",
+      "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications_platform_interface-2.0.0+1",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
@@ -668,6 +674,12 @@
       "languageVersion": "2.10"
     },
     {
+      "name": "timezone",
+      "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/timezone-0.6.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "timing",
       "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/timing-0.1.1+3",
       "packageUri": "lib/",
@@ -728,7 +740,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-05-04T10:19:34.082353Z",
+  "generated": "2021-05-05T10:59:07.860121Z",
   "generator": "pub",
   "generatorVersion": "2.10.5"
 }

@@ -128,6 +128,7 @@ androidx/viewpager/widget/ViewPager$DecorView.class
 com/baseflow/permissionhandler/PermissionConstants$PermissionGroup.class
 com/baseflow/permissionhandler/PermissionConstants$PermissionStatus.class
 com/baseflow/permissionhandler/PermissionConstants$ServiceStatus.class
+com/example/form/Application.class
 com/google/android/gms/common/GoogleSignatureVerifier.class
 com/google/android/gms/common/SignInButton$ButtonSize.class
 com/google/android/gms/common/SignInButton$ColorScheme.class
@@ -151,6 +152,7 @@ com/google/android/gms/common/zzc.class
 com/google/android/gms/common/zzm.class
 com/google/android/gms/flags/FlagSource.class
 com/google/android/gms/location/ActivityTransition$SupportedActivityTransition.class
+com/google/android/gms/stats/CodePackage.class
 com/google/auto/value/AutoAnnotation.class
 com/google/auto/value/AutoOneOf.class
 com/google/auto/value/AutoValue$Builder.class
@@ -196,6 +198,9 @@ com/google/firebase/firestore/PropertyName.class
 com/google/firebase/firestore/ServerTimestamp.class
 com/google/firebase/firestore/ThrowOnExtraProperties.class
 com/google/firebase/firestore/util/AsyncQueue.class
+com/google/firebase/messaging/FirebaseMessagingService.class
+com/google/firebase/messaging/RemoteMessage$MessagePriority.class
+com/google/firebase/messaging/zzc.class
 com/google/firebase/platforminfo/AutoValue_LibraryVersion.class
 com/google/firebase/platforminfo/LibraryVersion.class
 com/google/gson/annotations/Expose.class
@@ -219,6 +224,15 @@ com/google/protobuf/ExperimentalApi.class
 io/flutter/FlutterInjector.class
 io/flutter/app/FlutterApplication.class
 io/flutter/embedding/engine/loader/FlutterLoader.class
+io/flutter/embedding/engine/plugins/FlutterPlugin.class
+io/flutter/embedding/engine/plugins/activity/ActivityAware.class
+io/flutter/plugin/common/MethodChannel$MethodCallHandler.class
+io/flutter/plugin/common/PluginRegistry$NewIntentListener.class
+io/flutter/plugin/common/PluginRegistry$PluginRegistrantCallback.class
+io/flutter/plugin/common/PluginRegistry$Registrar.class
+io/flutter/plugin/common/PluginRegistry.class
+io/flutter/plugins/firebasemessaging/FirebaseMessagingPlugin.class
+io/flutter/plugins/firebasemessaging/FlutterFirebaseMessagingService.class
 io/grpc/CallOptions.class
 io/grpc/EquivalentAddressGroup$Attr.class
 io/grpc/ExperimentalApi.class
