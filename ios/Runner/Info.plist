@@ -24,6 +24,8 @@
     <string>This app requires to save your images user gallery</string>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>Your app requests When In Use authorization or Always authorization</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>This app needs access to location when in the background.</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

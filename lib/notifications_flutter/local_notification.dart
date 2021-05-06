@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:form/live_location/user_live_location.dart';
 import 'package:form/notifications_flutter/firebase_push_notification.dart';
 
 /// Local Notification Handling in flutter
@@ -144,6 +145,14 @@ class _LocalNotificationState extends State<LocalNotification> {
               onPressed: _showScheduledNotification,
               icon: Icon(Icons.notification_important_outlined),
               label: Text('Get Scheduled Notification'),
+            ),
+            SizedBox(height: 20.0,),
+            RaisedButton.icon(
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>UserLiveLocation()));
+              },
+              icon: Icon(Icons.location_pin),
+              label: Text('User Location'),
             ),
           ],
         ),

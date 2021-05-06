@@ -19,6 +19,8 @@
         android:label="ToDo_Form"
         android:requestLegacyExternalStorage="true"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAVRDFej_YNTfXdEN2rTexEwqFXEmr2hxQ"/>
         <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>

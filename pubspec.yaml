@@ -25,7 +25,7 @@ dependencies:
     sdk: flutter
   sqflite: ^1.0.0
   path_provider: ^1.0.0
-  intl: ^0.15.7
+  intl: any
   provider: any
   http: ^0.12.2
   mobx: any
@@ -45,6 +45,10 @@ dependencies:
   flutter_spinkit: ^4.0.0
   flutter_local_notifications: ^4.0.1+1
   firebase_messaging: ^6.0.16
+  google_maps_flutter: ^1.2.0
+  fluttertoast: ^7.1.8
+
+
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -81,6 +85,8 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/image/
+    - language/en-EN.json
+    - language/ma-MA.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
