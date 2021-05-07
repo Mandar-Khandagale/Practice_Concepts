@@ -620,6 +620,18 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "sensors",
+      "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/sensors-0.4.2+6",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "shake",
+      "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/shake-0.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "shared_preferences",
       "rootUri": "file:///Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.12+4",
       "packageUri": "lib/",
@@ -806,7 +818,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-05-06T13:41:01.527551Z",
+  "generated": "2021-05-07T10:39:00.187681Z",
   "generator": "pub",
   "generatorVersion": "2.10.5"
 }

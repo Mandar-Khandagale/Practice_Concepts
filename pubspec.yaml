@@ -47,6 +47,8 @@ dependencies:
   firebase_messaging: ^6.0.16
   google_maps_flutter: ^1.2.0
   fluttertoast: ^7.1.8
+  easy_localization: ^2.3.0
+  shake: ^0.1.0
 
 
 
@@ -85,8 +87,9 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/image/
-    - language/en-EN.json
-    - language/ma-MA.json
+    - lang/en-EN.json
+    - lang/mr-IN.json
+    - lang/hi-IN.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

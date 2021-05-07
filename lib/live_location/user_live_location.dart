@@ -73,7 +73,7 @@ class _UserLiveLocationState extends State<UserLiveLocation> {
       _locationSubscription = _locationTracker.onLocationChanged.listen((newLocalData) {
         if(_controller != null){
           _controller.animateCamera(CameraUpdate.newCameraPosition(CameraPosition(
-            bearing: 192.8334901395799,
+             bearing: 90.0,
             target: LatLng(newLocalData.latitude , newLocalData.longitude),
             tilt: 0,
             zoom: 18.00,

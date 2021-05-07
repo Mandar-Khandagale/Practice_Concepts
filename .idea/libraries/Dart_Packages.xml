@@ -723,6 +723,20 @@
             </list>
           </value>
         </entry>
+        <entry key="sensors">
+          <value>
+            <list>
+              <option value="$USER_HOME$/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/sensors-0.4.2+6/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="shake">
+          <value>
+            <list>
+              <option value="$USER_HOME$/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/shake-0.1.0/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="shared_preferences">
           <value>
             <list>
@@ -1035,6 +1049,8 @@
       <root url="file://$USER_HOME$/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/responsive_framework-0.0.15/lib" />
       <root url="file://$USER_HOME$/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/rxdart-0.25.0/lib" />
       <root url="file://$USER_HOME$/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/scoped_model-1.1.0/lib" />
+      <root url="file://$USER_HOME$/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/sensors-0.4.2+6/lib" />
+      <root url="file://$USER_HOME$/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/shake-0.1.0/lib" />
       <root url="file://$USER_HOME$/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.12+4/lib" />
       <root url="file://$USER_HOME$/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_linux-0.0.2+4/lib" />
       <root url="file://$USER_HOME$/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-0.0.1+11/lib" />

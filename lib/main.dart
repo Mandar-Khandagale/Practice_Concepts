@@ -16,10 +16,17 @@ import 'package:provider/provider.dart';
 
 
 void main() {
-  runApp(
-       DevicePreview(
-           enabled: false,
-           builder:(context)=> MyApp())
+  runApp(EasyLocalization(
+             child: MyApp(),
+             path: 'lang',
+             saveLocale: true,
+             supportedLocales: [
+               Locale('en','EN'),
+               Locale('mr','IN'),
+               Locale('hi','IN'),
+             ],
+           ),
+
   );
 }
 
