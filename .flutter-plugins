@@ -4,6 +4,7 @@ firebase_auth=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/
 firebase_core=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.5/
 firebase_core_web=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.1.1+2/
 firebase_messaging=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-6.0.16/
+flutter_barcode_scanner=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_barcode_scanner-1.0.2/
 flutter_local_notifications=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/
 flutter_plugin_android_lifecycle=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11/
 fluttertoast=/Users/apple/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-7.1.8/

@@ -5,6 +5,7 @@ import 'package:form/custom_permissions/permissions.dart';
 import 'package:form/firebase_demo/authenticate_services.dart';
 import 'package:form/firebase_demo/user.dart';
 import 'package:form/firebase_demo/wrapper.dart';
+import 'package:form/flutter_sensors/accelerometer_gyroscope_sensor.dart';
 import 'package:form/live_location/user_live_location.dart';
 import 'package:form/mvvm_design_arch/employee_view_model.dart';
 import 'package:form/notifications_flutter/firebase_push_notification.dart';
@@ -58,8 +59,9 @@ class MyApp extends StatelessWidget {
                   locale: context.locale,
                   //home: HomeScreen(),//for other implementation
                   //home:Wrapper(), //for firebase implementation
-                  home: LocalNotification(),  // for Local Notification
+                  //home: LocalNotification(),  // for Local Notification
                   //home: PushNotification(),// for  Firebase Push Notification
+                  home: SensorReadings(),
                   ),
               );
             }
