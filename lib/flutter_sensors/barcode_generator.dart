@@ -32,7 +32,7 @@ class _BarcodeGeneratorState extends State<BarcodeGenerator> {
               Container(
                 color: Colors.white,
                 child: BarcodeWidget(
-                  barcode: Barcode.code128(),
+                  barcode: Barcode.qrCode(),
                   data: controller.text ?? 'NOT A SECRET MSG',
                   width: 200,
                   height: 200,

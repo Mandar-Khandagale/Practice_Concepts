@@ -13,6 +13,7 @@ import 'package:form/notifications_flutter/local_notification.dart';
 import 'package:form/provider_plugin/api_response.dart';
 import 'package:form/responsive_pages/size_config.dart';
 import 'package:form/screens/home_screen.dart';
+import 'package:form/widgets_in_flutter/different_widgets.dart';
 import 'package:provider/provider.dart';
 
 
@@ -61,7 +62,7 @@ class MyApp extends StatelessWidget {
                   //home:Wrapper(), //for firebase implementation
                   //home: LocalNotification(),  // for Local Notification
                   //home: PushNotification(),// for  Firebase Push Notification
-                  home: SensorReadings(),
+                  home: DifferentWidgets(),
                   ),
               );
             }
